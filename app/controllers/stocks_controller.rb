@@ -1,6 +1,6 @@
 class StocksController < ApplicationController
   def search
-    if params[:stock].present? and !params[:stock].empty?
+    if params[:stock].present? && !params[:stock].empty?
 
       @stock = Stock.new_lookup(params[:stock])
       if @stock
